@@ -6,6 +6,16 @@
     });
   })
   
+  function Changeclass(x){
+    if ($(x).hasClass("chosen")){
+      $(x).removeClass("chosen");
+      alert("Block unselected");
+    }
+    else{
+      $(x).addClass("chosen");
+      alert("Block selected");
+    }
+  }
    function Changeboardcolor(){
     if ($(".chosen").size() == 0){
       alert("Please select a square!")
@@ -23,18 +33,9 @@
                       xhr.setRequestHeader('X-CSRF-Token', 
                       $('meta[name="csrf-token"]').attr('content'))
                     },
-        url: "/primary/Changeblockcolor",
-        data: {boards: selectedboard.join(","),color: selectedColor}
+        url: "/primary/board_coloring",
+        data: {tiles: selectedboard.join(","),color_code: selectedColor}
       });
     }
     
-  } function Changeclass(x){
-    if ($(x).hasClass("chosen")){
-      $(e).removeClass("chosen");
-      alert("Block unselected");
-    }
-    else{
-      $(e).addClass("chosen");
-      alert("Block selected");
-    }
-  }
+  } 
