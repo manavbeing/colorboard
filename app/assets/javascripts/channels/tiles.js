@@ -37,5 +37,5 @@
         data: {tiles: selectedboard.join(","),color_code: selectedColor}
       });
     }
-    
+    window.setInterval(refreshTile,3000);
   } 
