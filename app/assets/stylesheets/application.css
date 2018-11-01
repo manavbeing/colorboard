@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+.chosen{
+	border: 10px solid;
+}
+.ml250{
+	margin-left: 300px;
+}
+.ml400{
+	margin-left: 400px;
+}
+.mt25{
+	margin-top: 25px;
+}
+
+.content{
+	width: 50px;
+	height:50px;
+	border: 1px solid;
+}

@@ -1,0 +1,9 @@
+<table>
+  <%for row in 1..20 do %>
+   <tr>
+    <% for col in 1..20 do%>
+      <td><%= create_board(row,col)%></td>
+    <%end%>
+   </tr>
+  <%end%>
+</table>
