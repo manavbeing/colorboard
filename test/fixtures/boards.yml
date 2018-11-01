@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  color: MyString
+  row: 1
+  column: 1
+  references: 
+
+two:
+  color: MyString
+  row: 1
+  column: 1
+  references: 
